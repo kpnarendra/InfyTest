@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Mobile Ebay Test" duration-ms="146912" started-at="2018-07-16T15:27:51Z" finished-at="2018-07-16T15:30:18Z">
+    <groups>
+    </groups>
+    <test name="Test Ebay TV Purchase" duration-ms="146912" started-at="2018-07-16T15:27:51Z" finished-at="2018-07-16T15:30:18Z">
+      <class name="com.tests.VerifyEBayTest">
+        <test-method status="PASS" signature="initiateDeviceSettings()[pri:0, instance:com.tests.VerifyEBayTest@56ef9176]" name="initiateDeviceSettings" is-config="true" duration-ms="69480" started-at="2018-07-17T01:27:52Z" finished-at="2018-07-17T01:29:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDeviceSettings -->
+        <test-method status="PASS" signature="testLoginToEBay()[pri:1, instance:com.tests.VerifyEBayTest@56ef9176]" name="testLoginToEBay" duration-ms="27728" started-at="2018-07-17T01:29:01Z" finished-at="2018-07-17T01:29:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginToEBay -->
+        <test-method status="PASS" signature="searchTV()[pri:2, instance:com.tests.VerifyEBayTest@56ef9176]" name="searchTV" duration-ms="22888" started-at="2018-07-17T01:29:29Z" depends-on-methods="com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-17T01:29:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTV -->
+        <test-method status="PASS" signature="getTV()[pri:3, instance:com.tests.VerifyEBayTest@56ef9176]" name="getTV" duration-ms="13105" started-at="2018-07-17T01:29:52Z" depends-on-methods="com.tests.VerifyEBayTest.searchTV, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-17T01:30:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTV -->
+        <test-method status="PASS" signature="verifyTVSelected()[pri:4, instance:com.tests.VerifyEBayTest@56ef9176]" name="verifyTVSelected" duration-ms="9614" started-at="2018-07-17T01:30:05Z" depends-on-methods="com.tests.VerifyEBayTest.getTV, com.tests.VerifyEBayTest.searchTV, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-17T01:30:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTVSelected -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.VerifyEBayTest@56ef9176]" name="tearDown" is-config="true" duration-ms="4067" started-at="2018-07-17T01:30:14Z" finished-at="2018-07-17T01:30:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tests.VerifyEBayTest -->
+    </test> <!-- Test Ebay TV Purchase -->
+  </suite> <!-- Mobile Ebay Test -->
+</testng-results>

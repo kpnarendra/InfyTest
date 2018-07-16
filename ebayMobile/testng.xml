@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mobile Ebay Test" verbose="1">
+  <test thread-count="1" name="Test Ebay TV Purchase">
+    <classes>
+      <class name="com.tests.VerifyEBayTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

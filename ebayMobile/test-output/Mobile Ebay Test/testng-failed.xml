@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Mobile Ebay Test]">
+  <test name="Test Ebay TV Purchase(failed)">
+    <classes>
+      <class name="com.tests.VerifyEBayTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testLoginToEBay"/>
+          <include name="searchTV"/>
+          <include name="getTV"/>
+          <include name="verifyTVSelected"/>
+          <include name="initiateDeviceSettings"/>
+        </methods>
+      </class> <!-- com.tests.VerifyEBayTest -->
+    </classes>
+  </test> <!-- Test Ebay TV Purchase(failed) -->
+</suite> <!-- Failed suite [Mobile Ebay Test] -->
