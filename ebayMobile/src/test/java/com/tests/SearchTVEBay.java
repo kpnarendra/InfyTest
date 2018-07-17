@@ -27,7 +27,7 @@ public class SearchTVEBay {
 	void search55InchTV(){
 		genFunction.waitMethod(5);
 		driver.findElement(searchBox).click();
-		driver.findElement(searchText).sendKeys("55 inch TV");
+		driver.findElement(searchText).sendKeys(genFunction.fetchProperty("SearchString"));
 		driver.pressKeyCode(AndroidKeyCode.ENTER);
 	}
 	
