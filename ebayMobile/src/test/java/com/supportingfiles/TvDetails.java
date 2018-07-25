@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.tests;
+package com.supportingfiles;
 
 /**
  * @author narendrakp

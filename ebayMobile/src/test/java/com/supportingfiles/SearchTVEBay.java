@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.tests;
+package com.supportingfiles;
 
 import org.openqa.selenium.By;
 
@@ -19,16 +19,25 @@ public class SearchTVEBay {
 	
 	By searchBox = By.id("com.ebay.mobile:id/search_box");
 	By searchText = By.id("com.ebay.mobile:id/search_src_text");
+	By searchSave = By.id("com.ebay.mobile:id/text_slot_1");
 	
 	public SearchTVEBay(AndroidDriver driver){
 		this.driver = driver;
 	}
 	
-	void search55InchTV(){
-		genFunction.waitMethod(5);
+	public void searchInchTV(String searchStr){
+		//genFunction.waitMethod(5);
+		if(!driver.findElements(searchBox).isEmpty())
 		driver.findElement(searchBox).click();
-		driver.findElement(searchText).sendKeys(genFunction.fetchProperty("SearchString"));
+		driver.findElement(searchText).sendKeys(genFunction.fetchProperty(searchStr));
 		driver.pressKeyCode(AndroidKeyCode.ENTER);
 	}
+	
+	public void tapOnSaveSearch()
+	{
+		if(!driver.findElements(searchSave).isEmpty())
+		driver.findElement(searchSave).click();
+	}
+	
 	
 }

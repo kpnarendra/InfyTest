@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Mobile Ebay Test" duration-ms="167052" started-at="2018-07-17T01:48:21Z" finished-at="2018-07-17T01:51:08Z">
+  <suite name="Mobile Ebay Test" duration-ms="191646" started-at="2018-07-25T14:55:46Z" finished-at="2018-07-25T14:58:58Z">
     <groups>
     </groups>
-    <test name="Test Ebay TV Purchase" duration-ms="167052" started-at="2018-07-17T01:48:21Z" finished-at="2018-07-17T01:51:08Z">
+    <test name="Test Ebay TV Purchase" duration-ms="191646" started-at="2018-07-25T14:55:46Z" finished-at="2018-07-25T14:58:58Z">
       <class name="com.tests.VerifyEBayTest">
-        <test-method status="PASS" signature="initiateDeviceSettings()[pri:0, instance:com.tests.VerifyEBayTest@56ef9176]" name="initiateDeviceSettings" is-config="true" duration-ms="85334" started-at="2018-07-17T11:48:21Z" finished-at="2018-07-17T11:49:46Z">
+        <test-method status="PASS" signature="initiateDeviceSettings()[pri:0, instance:com.tests.VerifyEBayTest@56ef9176]" name="initiateDeviceSettings" is-config="true" duration-ms="72260" started-at="2018-07-26T00:55:46Z" finished-at="2018-07-26T00:56:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDeviceSettings -->
-        <test-method status="PASS" signature="testLoginToEBay()[pri:1, instance:com.tests.VerifyEBayTest@56ef9176]" name="testLoginToEBay" duration-ms="28850" started-at="2018-07-17T11:49:46Z" finished-at="2018-07-17T11:50:15Z">
+        <test-method status="PASS" signature="testLoginToEBay()[pri:1, instance:com.tests.VerifyEBayTest@56ef9176]" name="testLoginToEBay" duration-ms="30465" started-at="2018-07-26T00:56:59Z" finished-at="2018-07-26T00:57:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginToEBay -->
-        <test-method status="PASS" signature="searchTV()[pri:2, instance:com.tests.VerifyEBayTest@56ef9176]" name="searchTV" duration-ms="23285" started-at="2018-07-17T11:50:15Z" depends-on-methods="com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-17T11:50:38Z">
+        <test-method status="PASS" signature="testSearchTV1()[pri:2, instance:com.tests.VerifyEBayTest@56ef9176]" name="testSearchTV1" duration-ms="11462" started-at="2018-07-26T00:57:29Z" depends-on-methods="com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-26T00:57:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchTV -->
-        <test-method status="PASS" signature="getTV()[pri:3, instance:com.tests.VerifyEBayTest@56ef9176]" name="getTV" duration-ms="15555" started-at="2018-07-17T11:50:38Z" depends-on-methods="com.tests.VerifyEBayTest.searchTV, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-17T11:50:54Z">
+        </test-method> <!-- testSearchTV1 -->
+        <test-method status="PASS" signature="testGetTV1()[pri:3, instance:com.tests.VerifyEBayTest@56ef9176]" name="testGetTV1" duration-ms="8764" started-at="2018-07-26T00:57:40Z" depends-on-methods="com.tests.VerifyEBayTest.testSearchTV1, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-26T00:57:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTV -->
-        <test-method status="PASS" signature="verifyTVSelected()[pri:4, instance:com.tests.VerifyEBayTest@56ef9176]" name="verifyTVSelected" duration-ms="9650" started-at="2018-07-17T11:50:54Z" depends-on-methods="com.tests.VerifyEBayTest.getTV, com.tests.VerifyEBayTest.searchTV, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-17T11:51:03Z">
+        </test-method> <!-- testGetTV1 -->
+        <test-method status="PASS" signature="testVerifyTVSelected1()[pri:4, instance:com.tests.VerifyEBayTest@56ef9176]" name="testVerifyTVSelected1" duration-ms="13618" started-at="2018-07-26T00:57:49Z" depends-on-methods="com.tests.VerifyEBayTest.testSearchTV1, com.tests.VerifyEBayTest.testGetTV1, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-26T00:58:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTVSelected -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.VerifyEBayTest@56ef9176]" name="tearDown" is-config="true" duration-ms="4356" started-at="2018-07-17T11:51:03Z" finished-at="2018-07-17T11:51:08Z">
+        </test-method> <!-- testVerifyTVSelected1 -->
+        <test-method status="PASS" signature="testSearchTV2()[pri:5, instance:com.tests.VerifyEBayTest@56ef9176]" name="testSearchTV2" duration-ms="18884" started-at="2018-07-26T00:58:03Z" depends-on-methods="com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-26T00:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchTV2 -->
+        <test-method status="PASS" signature="testGetTV2()[pri:6, instance:com.tests.VerifyEBayTest@56ef9176]" name="testGetTV2" duration-ms="27352" started-at="2018-07-26T00:58:22Z" depends-on-methods="com.tests.VerifyEBayTest.testSearchTV2, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-26T00:58:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTV2 -->
+        <test-method status="PASS" signature="testVerifyTVSelected2()[pri:7, instance:com.tests.VerifyEBayTest@56ef9176]" name="testVerifyTVSelected2" duration-ms="3853" started-at="2018-07-26T00:58:49Z" depends-on-methods="com.tests.VerifyEBayTest.testSearchTV2, com.tests.VerifyEBayTest.testGetTV2, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-07-26T00:58:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyTVSelected2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.VerifyEBayTest@56ef9176]" name="tearDown" is-config="true" duration-ms="4957" started-at="2018-07-26T00:58:53Z" finished-at="2018-07-26T00:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

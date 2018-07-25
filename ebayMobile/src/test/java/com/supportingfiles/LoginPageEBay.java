@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.tests;
+package com.supportingfiles;
 
 import org.openqa.selenium.By;
-import com.tests.SupportingFunctions;
 
-import io.appium.java_client.MobileElement;
+import com.supportingfiles.SupportingFunctions;
+
 import io.appium.java_client.android.AndroidDriver;
 
 /**
@@ -22,7 +22,9 @@ public class LoginPageEBay {
 
 	By signInBtn = By.id("com.ebay.mobile:id/button_sign_in");
 	By loginName = By.id("com.ebay.mobile:id/edit_text_username");
-	By loginPwd = By.id("com.ebay.mobile:id/edit_text_password");
+//	By loginPwd = By.id("com.ebay.mobile:id/edit_text_password");
+//	By loginPwd = By.id("com.ebay.mobile:id/et_temp");
+	By loginPwd = By.id("com.ebay.mobile:id/password_container");
 	By signInBtn2= By.id("com.ebay.mobile:id/button_sign_in");
 	By noThanks = By.id("com.ebay.mobile:id/button_google_deny");
 
@@ -30,35 +32,30 @@ public class LoginPageEBay {
 	public LoginPageEBay(AndroidDriver driver){
 		this.driver = driver;
 	}
-	void clickSignIn() {
+	
+	public void clickSignIn() {
 		driver.findElement(signInBtn).click();
 				
 	}
 
-	void eBayEnterUserName() {
+	public void eBayEnterUserName() {
 		eBayUsn = genFunction.fetchProperty("userName");
 		driver.findElement(loginName).sendKeys(eBayUsn);
 	}
 
-	void eBayEnterPassword() {
+	public void eBayEnterPassword() {
 		eBayPwd = genFunction.fetchProperty("password");
 		driver.findElement(loginPwd).sendKeys(eBayPwd);
 	}
 
-	void clickSignInBtn2() {
+	public void clickSignInBtn2() {
 		driver.findElement(signInBtn2).click();
 	}
 	
-	void eBayConfirm() {
+	public void eBayConfirm() {
+		if(!driver.findElements(noThanks).isEmpty())
 		driver.findElement(noThanks).click();
 	}
 
-	public void loginEBay() {
-		clickSignIn();
-		eBayEnterUserName();
-		eBayEnterPassword();
-		clickSignInBtn2();
-		eBayConfirm();
-	}
 
 }
