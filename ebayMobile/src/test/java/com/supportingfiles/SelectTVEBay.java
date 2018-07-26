@@ -21,6 +21,7 @@ public class SelectTVEBay {
 		this.driver = driver;
 	}
 
+	//Scroll down to find the TV selected and click on the link to view TV details screen. 
 	public void findTVByName(String TV1) 
 	{
 		driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable("

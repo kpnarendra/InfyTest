@@ -23,7 +23,8 @@ public class VerifyEBayPurchase {
 		this.driver =driver;
 	}
 	
-	
+	//Read and return the details of the TV.
+	// Use getter and setter methods to retereive and store the data of TvDetails.
 	public TvDetails returnTVPurchaseInfo(){
 		System.out.println("Verify TV Purchase : TV Name - " +driver.findElement(selectedTvId).getText());
 		System.out.println("Verify TV Purchase : TV Cost - " +driver.findElement(selectedTvPrice).getText());
@@ -33,6 +34,7 @@ public class VerifyEBayPurchase {
 		
 	}
 	
+	//This method is to navigate in app so that another search can be done.
 	public void clickOnSearchAgain(){
 		driver.findElement(searchAgain).click();
 		driver.findElement(searchBox).clear();

@@ -33,25 +33,30 @@ public class LoginPageEBay {
 		this.driver = driver;
 	}
 	
+	//Click on signin button when the ebay app is loaded.
 	public void clickSignIn() {
-		driver.findElement(signInBtn).click();
-				
+		driver.findElement(signInBtn).click();		
 	}
 
+	//Enter user name, User name is data is fetched from data.properties file.
 	public void eBayEnterUserName() {
 		eBayUsn = genFunction.fetchProperty("userName");
 		driver.findElement(loginName).sendKeys(eBayUsn);
 	}
 
+	//Enter password, Password data is fetched from data.properties file.
 	public void eBayEnterPassword() {
 		eBayPwd = genFunction.fetchProperty("password");
 		driver.findElement(loginPwd).sendKeys(eBayPwd);
 	}
 
+	//Click on signin button after entering user name and password. 
 	public void clickSignInBtn2() {
 		driver.findElement(signInBtn2).click();
 	}
 	
+	//Address a banner which suggests to use google authentication api. 
+	//This is intermitant hence is handled to click if the element is found.
 	public void eBayConfirm() {
 		if(!driver.findElements(noThanks).isEmpty())
 		driver.findElement(noThanks).click();

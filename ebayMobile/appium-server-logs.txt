@@ -1,0 +1,1550 @@
+[info] [Appium] Welcome to Appium v1.8.1
+[info] [Appium] Non-default server args:
+[info] [Appium]   port: 4750
+[info] [Appium] Appium REST http interface listener started on 0.0.0.0:4750[info] [HTTP] --> POST /wd/hub/session
+[info] [HTTP] {"desiredCapabilities":{"app":"/Users/narendrakp/code/InfyTest/ebayMobile/src/test/resources/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk","appActivity":"com.ebay.mobile.activities.MainActivity","appPackage":"com.ebay.mobile","newCommandTimeout":"300","platformVersion":"6.0.1","platformName":"Android","deviceName":"ZY222TBJVS"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"app":"/Users/narendrakp/code/InfyTest/ebayMobile/src/test/resources/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk","appActivity":"com.ebay.mobile.activities.MainActivity","appPackage":"com.ebay.mobile","newCommandTimeout":"300","platformVersion":"6.0.1","platformName":"Android","deviceName":"ZY222TBJVS"},null,null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1532590233603 (17:30:33 GMT+1000 (AEST))
+[warn] [Appium] Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+[info] [Appium] Creating new AndroidDriver (v2.7.0) session
+[info] [Appium] Capabilities:
+[info] [Appium]   app: /Users/narendrakp/code/InfyTest/ebayMobile/src/test/resources/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk
+[info] [Appium]   appActivity: com.ebay.mobile.activities.MainActivity
+[info] [Appium]   appPackage: com.ebay.mobile
+[info] [Appium]   newCommandTimeout: 300
+[info] [Appium]   platformVersion: 6.0.1
+[info] [Appium]   platformName: Android
+[info] [Appium]   deviceName: ZY222TBJVS
+[debug] [BaseDriver] Creating session with MJSONWP desired capabilities: {"app":"/Users/narendrakp/c...
+[warn] [BaseDriver] Capability 'newCommandTimeout' changed from string ('300') to integer (300). This may cause unexpected behavior
+[info] [BaseDriver] Session created with session id: 20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb
+[debug] [AndroidDriver] Getting Java version
+[info] [AndroidDriver] Java version is: 1.8.0_151
+[info] [AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[info] [AndroidDriver] Looking for a device with Android '6.0.1'
+[debug] [ADB] Setting device id to ZY222TBJVS
+[info] [ADB] Getting device platform version
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell getprop ro.build.version.release'[debug] [ADB] Current device property 'ro.build.version.release': 6.0.1
+[info] [AndroidDriver] Using device: ZY222TBJVS
+[debug] [ADB] Setting device id to ZY222TBJVS
+[info] [BaseDriver] Using local app '/Users/narendrakp/code/InfyTest/ebayMobile/src/test/resources/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk'
+[debug] [AndroidDriver] Checking whether app is actually present
+[info] [AndroidDriver] Starting Android session
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS wait-for-device'
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell echo ping'
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell pm list packages io.appium.settings'[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for 'io.appium.settings'
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell dumpsys package io.appium.settings'
+[debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell ps'[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell getprop ro.build.version.sdk'
+[debug] [ADB] Current device property 'ro.build.version.sdk': 23
+[debug] [ADB] Device API level: 23
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'[debug] [ADB] Device API level: 23
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell appops set io.appium.settings android\:mock_location allow'[warn] [AndroidDriver] setDeviceLanguageCountry requires language or country.
+[warn] [AndroidDriver] Got language: 'undefined' and country: 'undefined'
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Getting install status for io.appium.unlock
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell pm list packages io.appium.unlock'[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for 'io.appium.unlock'
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell dumpsys package io.appium.unlock'
+[debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+[info] [ADB] Getting device platform version
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell getprop ro.build.version.release'
+[debug] [ADB] Current device property 'ro.build.version.release': 6.0.1
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell wm size'[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell getprop ro.product.model'[debug] [ADB] Current device property 'ro.product.model': MotoG3
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell getprop ro.product.manufacturer'
+[debug] [ADB] Current device property 'ro.product.manufacturer': motorola
+[debug] [ADB] Getting install status for com.ebay.mobile
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell pm list packages com.ebay.mobile'[debug] [ADB] App is not installed
+[debug] [ADB] Getting install status for com.ebay.mobile
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell pm list packages com.ebay.mobile'[debug] [ADB] App is not installed
+[debug] [ADB] App '/Users/narendrakp/code/InfyTest/ebayMobile/src/test/resources/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk' not installed. Installing
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS install /Users/narendrakp/code/InfyTest/ebayMobile/src/test/resources/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk'[debug] [ADB] Install command stdout: [  0%] /data/local/tmp/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk
+[debug] [ADB] [  0%] /data/local/tmp/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk
+[debug] [ADB] [  0%] /da...-129_Android-5.0.apk: 1 file pushed. 7.4 MB/s (26684335 bytes in 3.459s)
+[debug] [ADB] 	pkg: /data/local/tmp/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk
+[debug] [ADB] Success
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell rm -rf /data/local/tmp/strings.json'
+[debug] [AndroidDriver] Extracting strings from apk
+[debug] [AndroidDriver] /Users/narendrakp/code/InfyTest/ebayMobile/src/test/resources/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk
+[debug] [AndroidDriver] undefined
+[debug] [AndroidDriver] /var/folders/gm/2h35p48j67q1md5syfpdmc500000gn/T/com.ebay.mobile
+[debug] [ADB] Extracting strings for language: default[info] [ADB] Successfully extracted 4047 strings from '/Users/narendrakp/code/InfyTest/ebayMobile/src/test/resources/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk' resources for '(default)' configuration[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS push /var/folders/gm/2h35p48j67q1md5syfpdmc500000gn/T/com.ebay.mobile/strings.json /data/local/tmp'
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS forward tcp\:4724 tcp\:4724'
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS push /Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell ps'
+[info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","ZY222TBJVS","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.ebay.mobile","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false][debug] [UiAutomator] Moving to state 'online'
+[info] [AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell dumpsys window'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[info] [AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Device API level: 23
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell am start -W -n com.ebay.mobile/com.ebay.mobile.activities.MainActivity -S'[info] [Appium] New AndroidDriver session created successfully, session 20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1532590293638 (17:31:33 GMT+1000 (AEST))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"app":"/Users/narendrakp/code/InfyTest/ebayMobile/src/test/resources/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk","appActivity":"com.ebay.mobile.activities.MainActivity","appPackage":"com.ebay.mobile","newCommandTimeout":300,"platformVersion":"6.0.1","platformName":"Android","deviceName":"ZY222TBJVS"},"app":"/Users/narendrakp/code/InfyTest/ebayMobile/src/test/resources/com.ebay.mobile_v5.22.0.10-129_Android-5.0.apk","appActivity":"com.ebay.mobile.activities.MainActivity","appPackage":"com.ebay.mobile","newCommandTimeout":300,"platformVersion":"6.0.1","platformName":"Android","deviceName":"ZY222TBJVS","deviceUDID":"ZY222TBJVS","deviceScreenSize":"720x1280","deviceModel":"MotoG3","deviceManufacturer":"motorola"}
+[info] [HTTP] <-- POST /wd/hub/session 200 60038 ms - 1000
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/timeouts
+[info] [HTTP] {"type":"implicit","ms":10000}
+[debug] [MJSONWP] Calling AppiumDriver.timeouts() with args: [{"protocol":"MJSONWP","type":"implicit","ms":10000},"20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] type: implicit, ms: 10000
+[debug] [BaseDriver] Set implicit wait to 10000ms
+[debug] [MJSONWP] Responding to client with driver.timeouts() result: null
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/timeouts 200 3 ms - 76
+[info] [HTTP] [info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/button_sign_in"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/button_sign_in","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/button_sign_in' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/button_sign_in' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 410 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/button_sign_in' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/button_sign_in' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 1023 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/button_sign_in' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 2316 ms - 87
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/1/click
+[info] [HTTP] {"id":"1"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["1","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/1/click 200 285 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/edit_text_username"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/edit_text_username","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 1061 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 1657 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 2206 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 3119 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 4011 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 4591 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/edit_text_username","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/edit_text_username' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/edit_text_username][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"2"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 5728 ms - 87
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/2/value
+[info] [HTTP] {"id":"2","value":["acenarenkp@gmail.com"]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["acenarenkp@gmail.com"],"2","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"2","text":"acenarenkp@gmail.com","replace":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"2","text":"acenarenkp@gmail.com","replace":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 2
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: acenarenkp@gmail.com[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.setValue() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/2/value 200 6169 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/password_container"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/password_container","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/password_container","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/password_container","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/password_container' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/password_container][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"3"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 563 ms - 87
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/3/value
+[info] [HTTP] {"id":"3","value":["Aus022015"]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["Aus022015"],"3","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"3","text":"Aus022015","replace":false}}[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Could not check for hint text because the element is not focused!
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Clearing text not successful. Attempting to clear by selecting all and deleting.[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Could not check for hint text because the element is not focused!
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Clearing text not successful. Attempting to clear by sending delete keys.[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Could not check for hint text because the element is not focused!
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Exhausted all means to clear text but 'Password' remains.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: Aus022015[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.setValue() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/3/value 200 14382 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/button_sign_in"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/button_sign_in","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_sign_in","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/button_sign_in' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_sign_in][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"4"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"4"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 551 ms - 87
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/4/click
+[info] [HTTP] {"id":"4"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["4","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"4"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"4"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/4/click 200 202 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/elements
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/button_google_deny"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","com.ebay.mobile:id/button_google_deny","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_google_deny","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_google_deny","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/button_google_deny' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_google_deny]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_google_deny]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_google_deny][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/button_google_deny' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_google_deny]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_google_deny]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_google_deny]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 860 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_google_deny","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_google_deny","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/button_google_deny' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_google_deny]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/button_google_deny]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_google_deny][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/button_google_deny]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"5"}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"5"}]
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/elements 200 2054 ms - 89
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/button_google_deny"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/button_google_deny","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_google_deny","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/button_google_deny","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/button_google_deny' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/button_google_deny]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"6"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"6"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 25 ms - 87
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/6/click
+[info] [HTTP] {"id":"6"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["6","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"6"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"6"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/6/click 200 190 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/elements
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/search_box"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","com.ebay.mobile:id/search_box","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/search_box][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"7"}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"7"}]
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/elements 200 933 ms - 89
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/search_box"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/search_box","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"8"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"8"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 73 ms - 87
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/8/click
+[info] [HTTP] {"id":"8"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["8","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"8"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"8"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/8/click 200 212 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/search_src_text"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/search_src_text","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_src_text","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_src_text","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_src_text' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_src_text][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"9"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"9"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 1304 ms - 87
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/9/value
+[info] [HTTP] {"id":"9","value":["65 Inch TV"]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["65 Inch TV"],"9","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"9","text":"65 Inch TV","replace":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"9","text":"65 Inch TV","replace":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 9
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: 65 Inch TV[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.setValue() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/9/value 200 5153 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/appium/device/press_keycode
+[info] [HTTP] {"keycode":66}
+[debug] [MJSONWP] Calling AppiumDriver.pressKeyCode() with args: [66,null,null,null,null,"20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressKeyCode","params":{"keycode":66,"metastate":null}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressKeyCode","params":{"keycode":66,"metastate":null}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressKeyCode[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.pressKeyCode() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/appium/device/press_keycode 200 868 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/elements
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/text_slot_1"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","com.ebay.mobile:id/text_slot_1","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 669 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 1387 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"10"}]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: [{"ELEMENT":"10"}]
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/elements 200 3302 ms - 90
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/text_slot_1"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/text_slot_1","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"11"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"11"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 94 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/11/click
+[info] [HTTP] {"id":"11"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["11","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"11"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"11"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/11/click 200 175 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Samsung 65 inch UHD SMART LED TV\").instance(0))"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Samsung 65 inch UHD SMART LED TV\").instance(0))","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Samsung 65 inch UHD SMART LED TV\").instance(0))","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Samsung 65 inch UHD SMART LED TV\").instance(0))","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Samsung 65 inch UHD SMART LED TV").instance(0))' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Samsung 65 inch UHD SMART LED TV").instance(0))
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().textContains("Samsung 65 inch UHD SMART LED TV").instance(0),
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().textContains("Samsung 65 inch UHD SMART LED TV").instance(0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Samsung 65 inch UHD SMART LED TV"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@6b3c8d0[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoke complete.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Samsung 65 inch UHD SMART LED TV, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"12"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"12"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 8298 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/12/click
+[info] [HTTP] {"id":"12"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["12","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"12"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"12"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/12/click 200 249 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/textview_item_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/textview_item_name","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 1503 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 2126 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 2685 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+[debug] [BaseDriver] Waited for 3233 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"13"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"13"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 4135 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/13/text
+[info] [HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["13","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"13"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"13"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"UA65NU8000WXXY Samsung 65 inch UHD SMART LED TV"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "UA65NU8000WXXY Samsung 65 inch UHD SMART LED TV"
+[info] [HTTP] <-- GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/13/text 200 268 ms - 121
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/textview_item_price"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/textview_item_price","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_price","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_price","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_price' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_price][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"14"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"14"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 197 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/14/text
+[info] [HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["14","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"14"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"14"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"AU $ 2,980"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "AU $ 2,980"
+[info] [HTTP] <-- GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/14/text 200 209 ms - 86
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/textview_item_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/textview_item_name","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"15"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"15"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 117 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/15/text
+[info] [HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["15","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"15"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"15"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"UA65NU8000WXXY Samsung 65 inch UHD SMART LED TV"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "UA65NU8000WXXY Samsung 65 inch UHD SMART LED TV"
+[info] [HTTP] <-- GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/15/text 200 204 ms - 121
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/textview_item_price"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/textview_item_price","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_price","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_price","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_price' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_price]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"16"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"16"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 143 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/16/text
+[info] [HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["16","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"16"}}[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"16"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"AU $ 2,980"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "AU $ 2,980"
+[info] [HTTP] <-- GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/16/text 200 54 ms - 86
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/menu_search"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/menu_search","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/menu_search","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/menu_search","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/menu_search' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/menu_search][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"17"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"17"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 197 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/17/click
+[info] [HTTP] {"id":"17"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["17","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"17"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"17"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/17/click 200 311 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/search_src_text"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/search_src_text","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_src_text","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_src_text","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_src_text' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_src_text][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"18"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"18"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 946 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/18/clear
+[info] [HTTP] {"id":"18"}
+[debug] [MJSONWP] Calling AppiumDriver.clear() with args: ["18","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"18"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"18"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"65 Inch TV"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"18"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"18"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [AndroidDriver] Sending up to 10 clear characters to device
+[debug] [AndroidDriver] Sending 10 clear characters to device
+[debug] [ADB] Clearing up to 10 characters
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell input keyevent 67 112 67 112 67 112 67 112 67 112 67 112 67 112 67 112 67 112 67 112'[debug] [MJSONWP] Responding to client with driver.clear() result: null
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/18/clear 200 2329 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/elements
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/search_box"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","com.ebay.mobile:id/search_box","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 519 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 1057 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 1972 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 2508 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 3068 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 3621 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 4206 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 4744 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 5281 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 5844 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 6481 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 7216 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 7755 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 8312 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 8916 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box][debug] [BaseDriver] Waited for 9462 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_box","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_box' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_box]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: []
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/elements 200 10014 ms - 74
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/search_src_text"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/search_src_text","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_src_text","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/search_src_text","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/search_src_text' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/search_src_text]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"19"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"19"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 59 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/19/value
+[info] [HTTP] {"id":"19","value":["55 Inch TV"]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["55 Inch TV"],"19","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"19","text":"55 Inch TV","replace":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"19","text":"55 Inch TV","replace":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 19
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: 55 Inch TV[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.setValue() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/19/value 200 6065 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/appium/device/press_keycode
+[info] [HTTP] {"keycode":66}
+[debug] [MJSONWP] Calling AppiumDriver.pressKeyCode() with args: [66,null,null,null,null,"20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressKeyCode","params":{"keycode":66,"metastate":null}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressKeyCode","params":{"keycode":66,"metastate":null}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressKeyCode[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.pressKeyCode() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/appium/device/press_keycode 200 1369 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/elements
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/text_slot_1"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","com.ebay.mobile:id/text_slot_1","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 1683 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 2975 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 3553 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 4103 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 4671 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 5224 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 5850 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 6476 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 7028 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 7668 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 8216 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 8773 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 9326 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [BaseDriver] Waited for 9963 ms so far[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/text_slot_1","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/text_slot_1' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.ebay.mobile:id/text_slot_1]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/text_slot_1][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: []
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/elements 200 10539 ms - 74
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV\").instance(0))"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV\").instance(0))","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV\").instance(0))","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV\").instance(0))","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV").instance(0))' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV").instance(0))
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().textContains("SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV").instance(0),
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().textContains("SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV").instance(0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@29c10c9[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoke complete.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"20"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"20"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 26948 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/20/click
+[info] [HTTP] {"id":"20"}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["20","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"20"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"20"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/20/click 200 212 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/textview_item_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/textview_item_name","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"21"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"21"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 1332 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/21/text
+[info] [HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["21","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"21"}}[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"21"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV KD55X8500PSDE Brand New"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV KD55X8500PSDE Brand New"
+[info] [HTTP] <-- GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/21/text 200 871 ms - 152
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/textview_item_price"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/textview_item_price","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_price","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_price","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_price' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_price]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"22"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"22"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 89 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/22/text
+[info] [HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["22","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"22"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"22"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"AU $ 1,799.95"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "AU $ 1,799.95"
+[info] [HTTP] <-- GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/22/text 200 391 ms - 89
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/textview_item_name"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/textview_item_name","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_name","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_name' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_name][debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"23"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"23"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 1319 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/23/text
+[info] [HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["23","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"23"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"23"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV KD55X8500PSDE Brand New"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "SONY 55 Inch Pro Bravia Ultra HD LED 4K HDR Android TV KD55X8500PSDE Brand New"
+[info] [HTTP] <-- GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/23/text 200 138 ms - 152
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element
+[info] [HTTP] {"using":"id","value":"com.ebay.mobile:id/textview_item_price"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.ebay.mobile:id/textview_item_price","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 10000 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_price","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.ebay.mobile:id/textview_item_price","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.ebay.mobile:id/textview_item_price' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.ebay.mobile:id/textview_item_price]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"24"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"24"}
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element 200 56 ms - 88
+[info] [HTTP] 
+[info] [HTTP] --> GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/24/text
+[info] [HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.getText() with args: ["24","20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"24"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"24"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"AU $ 1,799.95"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.getText() result: "AU $ 1,799.95"
+[info] [HTTP] <-- GET /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/element/24/text 200 112 ms - 89
+[info] [HTTP] 
+[info] [HTTP] --> POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/appium/app/close
+[info] [HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.closeApp() with args: ["20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell am force-stop com.ebay.mobile'[debug] [MJSONWP] Responding to client with driver.closeApp() result: null
+[info] [HTTP] <-- POST /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb/appium/app/close 200 1359 ms - 76
+[info] [HTTP] 
+[info] [HTTP] --> DELETE /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb
+[info] [HTTP] {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1532590421078 (17:33:41 GMT+1000 (AEST))
+[info] [Appium] Removing session 20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb from our master session list
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell am force-stop com.ebay.mobile'[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell input keyevent 3'[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell ps'[info] [ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Running '/Users/narendrakp/Library/Android/sdk/platform-tools/adb -P 5037 -s ZY222TBJVS shell am force-stop io.appium.unlock'[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1532590425026 (17:33:45 GMT+1000 (AEST))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[info] [HTTP] <-- DELETE /wd/hub/session/20a84bfc-f3cd-4d56-a2c5-bcf084dfd8eb 200 3949 ms - 76
+[info] [HTTP] 

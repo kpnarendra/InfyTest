@@ -61,7 +61,7 @@ public class VerifyEBayTest {
 		loginToEBay.eBayConfirm();
 	}
 	
-	//  Search TV from TV Search Instance 1 from data.properties file.
+	//  Search TV using TV Search Instance 1 from data.properties file.
 	@Test(priority = 2 , dependsOnMethods = "testLoginToEBay")
 	public void testSearchTV1(){
 		searchTV = new SearchTVEBay(driver);
@@ -76,6 +76,7 @@ public class VerifyEBayTest {
 		selectedTV.findTVByName(genFunction.fetchProperty("TVSelected_1"));
 	}
 	
+	// Compare the TV Name and cost.
 	@Test(priority = 4 , dependsOnMethods = {"testLoginToEBay","testSearchTV1","testGetTV1"})
 	public void testVerifyTVSelected1(){
 		verifyTVDetails = new VerifyEBayPurchase(driver);
@@ -86,6 +87,7 @@ public class VerifyEBayTest {
 		verifyTVDetails.clickOnSearchAgain();
 	}
 	
+	// Search TV using TV Search Instance 1 from data.properties file.
 	@Test(priority = 5 , dependsOnMethods = "testLoginToEBay")
 	public void testSearchTV2(){
 		searchTV = new SearchTVEBay(driver);
@@ -93,12 +95,14 @@ public class VerifyEBayTest {
 		searchTV.tapOnSaveSearch();
 	}
 	
+	// Select TV Instance 1 from data.properties file.
 	@Test(priority = 6 , dependsOnMethods = {"testLoginToEBay","testSearchTV2"})
 	public void testGetTV2(){
 		selectedTV = new SelectTVEBay(driver);
 		selectedTV.findTVByName(genFunction.fetchProperty("TVSelected_2"));
 	}
 	
+	// Compare the TV Name and cost.
 	@Test(priority = 7 , dependsOnMethods = {"testLoginToEBay","testSearchTV2","testGetTV2"})
 	public void testVerifyTVSelected2(){
 		verifyTVDetails = new VerifyEBayPurchase(driver);
@@ -108,6 +112,7 @@ public class VerifyEBayTest {
 		System.out.println("TV Name is "+purchaseDetails.getTvName()+ " and TV Costs AUD " + purchaseDetails.getTvCost());
 	}
 	
+	//Close App and quit driver.
 	@AfterClass
 	public void tearDown(){
 		driver.closeApp();

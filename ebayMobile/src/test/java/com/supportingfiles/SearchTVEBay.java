@@ -25,14 +25,16 @@ public class SearchTVEBay {
 		this.driver = driver;
 	}
 	
+	//Enter search string in the search text box and press enter.
 	public void searchInchTV(String searchStr){
-		//genFunction.waitMethod(5);
 		if(!driver.findElements(searchBox).isEmpty())
 		driver.findElement(searchBox).click();
 		driver.findElement(searchText).sendKeys(genFunction.fetchProperty(searchStr));
 		driver.pressKeyCode(AndroidKeyCode.ENTER);
 	}
 	
+	//A banner will is intermitently displayed to save the search in favourates.
+	//Handle the banner to be clicked only if the element is visible.
 	public void tapOnSaveSearch()
 	{
 		if(!driver.findElements(searchSave).isEmpty())
