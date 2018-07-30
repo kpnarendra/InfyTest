@@ -55,9 +55,7 @@ public class VerifyEBayTest {
 	public void testLoginToEBay() {
 		loginToEBay = new LoginPageEBay(driver);
 		loginToEBay.clickSignIn();
-		loginToEBay.eBayEnterUserName();
-		loginToEBay.eBayEnterPassword();
-		loginToEBay.clickSignInBtn2();
+		loginToEBay.logInToEbay();
 		loginToEBay.eBayConfirm();
 	}
 	

@@ -38,21 +38,19 @@ public class LoginPageEBay {
 		driver.findElement(signInBtn).click();		
 	}
 
-	//Enter user name, User name is data is fetched from data.properties file.
-	public void eBayEnterUserName() {
-		eBayUsn = genFunction.fetchProperty("userName");
-		driver.findElement(loginName).sendKeys(eBayUsn);
-	}
-
-	//Enter password, Password data is fetched from data.properties file.
-	public void eBayEnterPassword() {
-		eBayPwd = genFunction.fetchProperty("password");
-		driver.findElement(loginPwd).sendKeys(eBayPwd);
-	}
-
-	//Click on signin button after entering user name and password. 
-	public void clickSignInBtn2() {
-		driver.findElement(signInBtn2).click();
+	//Log in to Ebay
+	public void logInToEbay(){
+		
+		//Enter user name, User name is data is fetched from data.properties file.
+			eBayUsn = genFunction.fetchProperty("userName");
+			driver.findElement(loginName).sendKeys(eBayUsn);
+		
+		//Enter password, Password data is fetched from data.properties file.
+			eBayPwd = genFunction.fetchProperty("password");
+			driver.findElement(loginPwd).sendKeys(eBayPwd);
+		
+		//Click on signin button after entering user name and password. 
+			driver.findElement(signInBtn2).click();
 	}
 	
 	//Address a banner which suggests to use google authentication api. 
@@ -61,6 +59,5 @@ public class LoginPageEBay {
 		if(!driver.findElements(noThanks).isEmpty())
 		driver.findElement(noThanks).click();
 	}
-
 
 }

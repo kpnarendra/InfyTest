@@ -15,6 +15,8 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -75,11 +77,9 @@ public class SupportingFunctions {
 		caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, fetchProperty("appPackage"));	
 		Thread.sleep(5000);
 		driver = new AndroidDriver(new URL("http://0.0.0.0:4750/wd/hub"), caps);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Long.parseLong(fetchProperty("waitTime")), TimeUnit.SECONDS);
 		waitMethod(4);
 		return driver;
 	}
-	
-	
 
 }
