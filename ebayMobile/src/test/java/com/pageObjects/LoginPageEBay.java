@@ -1,11 +1,12 @@
 /**
  * 
  */
-package com.supportingfiles;
+package com.pageObjects;
 
 import org.openqa.selenium.By;
 
-import com.supportingfiles.SupportingFunctions;
+import com.helper.SupportingFunctions;
+import com.helper.wrapperActions;
 
 import io.appium.java_client.android.AndroidDriver;
 
@@ -30,12 +31,13 @@ public class LoginPageEBay {
 
 	
 	public LoginPageEBay(AndroidDriver driver){
-		this.driver = driver;
+		this.driver=driver;
 	}
 	
 	//Click on signin button when the ebay app is loaded.
 	public void clickSignIn() {
-		driver.findElement(signInBtn).click();		
+		//clickElement(signInBtn);		
+		driver.findElement(signInBtn).click();
 	}
 
 	//Log in to Ebay

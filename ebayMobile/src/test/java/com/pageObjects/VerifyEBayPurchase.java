@@ -1,6 +1,8 @@
-package com.supportingfiles;
+package com.pageObjects;
 
 import org.openqa.selenium.By;
+
+import com.helper.SupportingFunctions;
 
 import io.appium.java_client.android.AndroidDriver;
 

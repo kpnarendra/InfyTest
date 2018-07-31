@@ -5,12 +5,12 @@ package com.tests;
 
 import org.testng.annotations.Test;
 
-import com.supportingfiles.LoginPageEBay;
-import com.supportingfiles.SearchTVEBay;
-import com.supportingfiles.SelectTVEBay;
-import com.supportingfiles.SupportingFunctions;
-import com.supportingfiles.TvDetails;
-import com.supportingfiles.VerifyEBayPurchase;
+import com.helper.SupportingFunctions;
+import com.pageObjects.LoginPageEBay;
+import com.pageObjects.SearchTVEBay;
+import com.pageObjects.SelectTVEBay;
+import com.pageObjects.TvDetails;
+import com.pageObjects.VerifyEBayPurchase;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

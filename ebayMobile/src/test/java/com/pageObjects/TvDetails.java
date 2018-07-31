@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.supportingfiles;
+package com.pageObjects;
 
 /**
  * @author narendrakp
