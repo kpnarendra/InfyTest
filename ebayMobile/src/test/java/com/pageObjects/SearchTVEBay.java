@@ -6,6 +6,7 @@ package com.pageObjects;
 import org.openqa.selenium.By;
 
 import com.helper.SupportingFunctions;
+import com.helper.wrapperActions;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
@@ -14,9 +15,9 @@ import io.appium.java_client.android.AndroidKeyCode;
  * @author narendrakp
  *
  */
-public class SearchTVEBay {
+public class SearchTVEBay extends wrapperActions  {
 
-	public AndroidDriver driver;
+	//public AndroidDriver driver;
 	SupportingFunctions genFunction = new SupportingFunctions(driver);
 	
 	By searchBox = By.id("com.ebay.mobile:id/search_box");
@@ -24,23 +25,21 @@ public class SearchTVEBay {
 	By searchSave = By.id("com.ebay.mobile:id/text_slot_1");
 	
 	public SearchTVEBay(AndroidDriver driver){
-		this.driver = driver;
+		super(driver);
 	}
 	
 	//Enter search string in the search text box and press enter.
 	public void searchInchTV(String searchStr){
-		if(!driver.findElements(searchBox).isEmpty())
-		driver.findElement(searchBox).click();
-		driver.findElement(searchText).sendKeys(genFunction.fetchProperty(searchStr));
-		driver.pressKeyCode(AndroidKeyCode.ENTER);
+		checkBeforeClick(searchBox);
+		sendText(searchText,genFunction.fetchProperty(searchStr));
+		pressEnterKey();
 	}
 	
 	//A banner will is intermitently displayed to save the search in favourates.
 	//Handle the banner to be clicked only if the element is visible.
 	public void tapOnSaveSearch()
 	{
-		if(!driver.findElements(searchSave).isEmpty())
-		driver.findElement(searchSave).click();
+		checkBeforeClick(searchSave);
 	}
 	
 	

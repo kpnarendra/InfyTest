@@ -61,22 +61,22 @@ public class VerifyEBayTest {
 	
 	//  Search TV using TV Search Instance 1 from data.properties file.
 	@Test(priority = 2 , dependsOnMethods = "testLoginToEBay")
-	public void testSearchTV1(){
+	public void testSearchTV65(){
 		searchTV = new SearchTVEBay(driver);
 		searchTV.searchInchTV("SearchString_1");
 		searchTV.tapOnSaveSearch();
 	}
 	
 	// Select TV Instance 1 from data.properties file.
-	@Test(priority = 3 , dependsOnMethods = {"testLoginToEBay","testSearchTV1"})
-	public void testGetTV1(){
+	@Test(priority = 3 , dependsOnMethods = {"testLoginToEBay","testSearchTV65"})
+	public void testGetTV65(){
 		selectedTV = new SelectTVEBay(driver);
 		selectedTV.findTVByName(genFunction.fetchProperty("TVSelected_1"));
 	}
 	
 	// Compare the TV Name and cost.
-	@Test(priority = 4 , dependsOnMethods = {"testLoginToEBay","testSearchTV1","testGetTV1"})
-	public void testVerifyTVSelected1(){
+	@Test(priority = 4 , dependsOnMethods = {"testLoginToEBay","testSearchTV65","testGetTV65"})
+	public void testVerifyTVSelected65(){
 		verifyTVDetails = new VerifyEBayPurchase(driver);
 		purchaseDetails = verifyTVDetails.returnTVPurchaseInfo();
 		assertEquals(purchaseDetails.getTvName(),genFunction.fetchProperty("TVName_1")," The TV names should match");
@@ -87,22 +87,22 @@ public class VerifyEBayTest {
 	
 	// Search TV using TV Search Instance 1 from data.properties file.
 	@Test(priority = 5 , dependsOnMethods = "testLoginToEBay")
-	public void testSearchTV2(){
+	public void testSearchTV55(){
 		searchTV = new SearchTVEBay(driver);
 		searchTV.searchInchTV("SearchString_2");
 		searchTV.tapOnSaveSearch();
 	}
 	
 	// Select TV Instance 1 from data.properties file.
-	@Test(priority = 6 , dependsOnMethods = {"testLoginToEBay","testSearchTV2"})
-	public void testGetTV2(){
+	@Test(priority = 6 , dependsOnMethods = {"testLoginToEBay","testSearchTV55"})
+	public void testGetTV55(){
 		selectedTV = new SelectTVEBay(driver);
 		selectedTV.findTVByName(genFunction.fetchProperty("TVSelected_2"));
 	}
 	
 	// Compare the TV Name and cost.
-	@Test(priority = 7 , dependsOnMethods = {"testLoginToEBay","testSearchTV2","testGetTV2"})
-	public void testVerifyTVSelected2(){
+	@Test(priority = 7 , dependsOnMethods = {"testLoginToEBay","testSearchTV55","testGetTV55"})
+	public void testVerifyTVSelected55(){
 		verifyTVDetails = new VerifyEBayPurchase(driver);
 		purchaseDetails = verifyTVDetails.returnTVPurchaseInfo();
 		assertEquals(purchaseDetails.getTvName(),genFunction.fetchProperty("TVName_2")," The TV names should match");

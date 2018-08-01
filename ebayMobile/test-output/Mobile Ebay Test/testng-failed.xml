@@ -5,15 +5,15 @@
     <classes>
       <class name="com.tests.VerifyEBayTest">
         <methods>
-          <include name="testVerifyTVSelected2"/>
+          <include name="testSearchTV65"/>
           <include name="tearDown"/>
           <include name="testLoginToEBay"/>
-          <include name="testSearchTV1"/>
-          <include name="testVerifyTVSelected1"/>
-          <include name="testGetTV1"/>
-          <include name="testGetTV2"/>
+          <include name="testSearchTV55"/>
+          <include name="testVerifyTVSelected55"/>
+          <include name="testGetTV55"/>
+          <include name="testVerifyTVSelected65"/>
+          <include name="testGetTV65"/>
           <include name="initiateDeviceSettings"/>
-          <include name="testSearchTV2"/>
         </methods>
       </class> <!-- com.tests.VerifyEBayTest -->
     </classes>
