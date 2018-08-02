@@ -1,2 +1,2 @@
 This project is an Appium mobile automation framework to search TVs on EBay App.
-The project is built using Page object model design pattern using TestNg testing framework.
+The project is built using Page object model design pattern on TestNg testing framework.
