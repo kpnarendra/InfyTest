@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Mobile Ebay Test" duration-ms="156367" started-at="2018-08-01T13:12:51Z" finished-at="2018-08-01T13:15:27Z">
+  <suite name="Mobile Ebay Test" duration-ms="130065" started-at="2018-08-02T11:35:56Z" finished-at="2018-08-02T11:38:07Z">
     <groups>
     </groups>
-    <test name="Test Ebay TV Purchase" duration-ms="156367" started-at="2018-08-01T13:12:51Z" finished-at="2018-08-01T13:15:27Z">
+    <test name="Test Ebay TV Purchase" duration-ms="130065" started-at="2018-08-02T11:35:56Z" finished-at="2018-08-02T11:38:07Z">
       <class name="com.tests.VerifyEBayTest">
-        <test-method status="PASS" signature="initiateDeviceSettings()[pri:0, instance:com.tests.VerifyEBayTest@56ef9176]" name="initiateDeviceSettings" is-config="true" duration-ms="14800" started-at="2018-08-01T23:12:51Z" finished-at="2018-08-01T23:13:06Z">
+        <test-method status="PASS" signature="initiateDeviceSettings()[pri:0, instance:com.tests.VerifyEBayTest@56ef9176]" name="initiateDeviceSettings" is-config="true" duration-ms="14546" started-at="2018-08-02T21:35:57Z" finished-at="2018-08-02T21:36:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateDeviceSettings -->
-        <test-method status="PASS" signature="testLoginToEBay()[pri:1, instance:com.tests.VerifyEBayTest@56ef9176]" name="testLoginToEBay" duration-ms="52602" started-at="2018-08-01T23:13:06Z" finished-at="2018-08-01T23:13:59Z">
+        <test-method status="PASS" signature="testLoginToEBay()[pri:1, instance:com.tests.VerifyEBayTest@56ef9176]" name="testLoginToEBay" duration-ms="44977" started-at="2018-08-02T21:36:11Z" finished-at="2018-08-02T21:36:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginToEBay -->
-        <test-method status="PASS" signature="testSearchTV65()[pri:2, instance:com.tests.VerifyEBayTest@56ef9176]" name="testSearchTV65" duration-ms="10969" started-at="2018-08-01T23:13:59Z" depends-on-methods="com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-01T23:14:10Z">
+        <test-method status="PASS" signature="testSearchTV65()[pri:2, instance:com.tests.VerifyEBayTest@56ef9176]" name="testSearchTV65" duration-ms="9974" started-at="2018-08-02T21:36:56Z" depends-on-methods="com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-02T21:37:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchTV65 -->
-        <test-method status="PASS" signature="testGetTV65()[pri:3, instance:com.tests.VerifyEBayTest@56ef9176]" name="testGetTV65" duration-ms="9906" started-at="2018-08-01T23:14:10Z" depends-on-methods="com.tests.VerifyEBayTest.testSearchTV65, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-01T23:14:19Z">
+        <test-method status="PASS" signature="testGetTV65()[pri:3, instance:com.tests.VerifyEBayTest@56ef9176]" name="testGetTV65" duration-ms="10002" started-at="2018-08-02T21:37:06Z" depends-on-methods="com.tests.VerifyEBayTest.testSearchTV65, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-02T21:37:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTV65 -->
-        <test-method status="PASS" signature="testVerifyTVSelected65()[pri:4, instance:com.tests.VerifyEBayTest@56ef9176]" name="testVerifyTVSelected65" duration-ms="19110" started-at="2018-08-01T23:14:19Z" depends-on-methods="com.tests.VerifyEBayTest.testGetTV65, com.tests.VerifyEBayTest.testSearchTV65, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-01T23:14:39Z">
+        <test-method status="PASS" signature="testVerifyTVSelected65()[pri:4, instance:com.tests.VerifyEBayTest@56ef9176]" name="testVerifyTVSelected65" duration-ms="11266" started-at="2018-08-02T21:37:16Z" depends-on-methods="com.tests.VerifyEBayTest.testGetTV65, com.tests.VerifyEBayTest.testSearchTV65, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-02T21:37:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyTVSelected65 -->
-        <test-method status="PASS" signature="testSearchTV55()[pri:5, instance:com.tests.VerifyEBayTest@56ef9176]" name="testSearchTV55" duration-ms="15879" started-at="2018-08-01T23:14:39Z" depends-on-methods="com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-01T23:14:54Z">
+        <test-method status="PASS" signature="testSearchTV55()[pri:5, instance:com.tests.VerifyEBayTest@56ef9176]" name="testSearchTV55" duration-ms="15728" started-at="2018-08-02T21:37:27Z" depends-on-methods="com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-02T21:37:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchTV55 -->
-        <test-method status="PASS" signature="testGetTV55()[pri:6, instance:com.tests.VerifyEBayTest@56ef9176]" name="testGetTV55" duration-ms="27869" started-at="2018-08-01T23:14:54Z" depends-on-methods="com.tests.VerifyEBayTest.testSearchTV55, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-01T23:15:22Z">
+        <test-method status="PASS" signature="testGetTV55()[pri:6, instance:com.tests.VerifyEBayTest@56ef9176]" name="testGetTV55" duration-ms="19738" started-at="2018-08-02T21:37:43Z" depends-on-methods="com.tests.VerifyEBayTest.testSearchTV55, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-02T21:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTV55 -->
-        <test-method status="PASS" signature="testVerifyTVSelected55()[pri:7, instance:com.tests.VerifyEBayTest@56ef9176]" name="testVerifyTVSelected55" duration-ms="3506" started-at="2018-08-01T23:15:22Z" depends-on-methods="com.tests.VerifyEBayTest.testGetTV55, com.tests.VerifyEBayTest.testSearchTV55, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-01T23:15:26Z">
+        <test-method status="PASS" signature="testVerifyTVSelected55()[pri:7, instance:com.tests.VerifyEBayTest@56ef9176]" name="testVerifyTVSelected55" duration-ms="2006" started-at="2018-08-02T21:38:03Z" depends-on-methods="com.tests.VerifyEBayTest.testGetTV55, com.tests.VerifyEBayTest.testSearchTV55, com.tests.VerifyEBayTest.testLoginToEBay" finished-at="2018-08-02T21:38:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifyTVSelected55 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.VerifyEBayTest@56ef9176]" name="tearDown" is-config="true" duration-ms="1693" started-at="2018-08-01T23:15:26Z" finished-at="2018-08-01T23:15:27Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tests.VerifyEBayTest@56ef9176]" name="tearDown" is-config="true" duration-ms="1794" started-at="2018-08-02T21:38:05Z" finished-at="2018-08-02T21:38:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
